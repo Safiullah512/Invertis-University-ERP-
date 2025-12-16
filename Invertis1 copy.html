@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invertis 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="invertis1.css">
+</head>
+
+<body>
+    <div class="home">
+        <div class="header">
+            <div>
+                <p>Announcement<i class="fa-solid fa-hand-point-up"></i></p>
+            </div>
+            <div class="headerr">
+                <p>SAFIULLAH SHEKH</p>
+            </div>
+        </div>
+        <div class="header1">
+            <div><img src="https://www.invertisuniversity.ac.in/images/logo.png" alt="invertis University"
+                    class="invertisImg"></div>
+            <div class="headermid">
+                <div class="box" id="box1">
+                    <p><button id="admission1">Addmission</button></p>
+                </div>
+                <div class="box">
+                    <p><button id="academic1">Academic</button></p>
+                </div>
+                <div class="box">
+                    <p><button id="fees1">Fees</button></p>
+                </div>
+                <div class="box">
+                    <p><button id="ApplicationBtn">Application</button></p>
+                </div>
+                <div class="box">
+                    <p><button onclick="showContent('application')">Appplication</button></p>
+                </div>
+                <div class="box">
+                    <p>More</p>
+                </div>
+            </div>
+            <div class="headerfoot"><img src="Images/Shafiq.png" alt="Shafiq"></div>
+        </div>
+        <hr>
+        <div class="myhome">
+            <h3><i class="fa-solid fa-house"></i> My Home Page</h3>
+        </div>
+        <div class="backgroundimg"></div>
+        <div class="leftcol" id="defualtsidebar">
+            <div class="lefthome">
+                <p>Home</p>
+            </div>
+            <div>
+                <p>Notifications</p>
+            </div>
+            <div>
+                <p>Announcement</p>
+            </div>
+            <div>
+                <p>Events</p>
+            </div>
+            <div>
+                <p>Circular-Notice/<br>Announcement</p>
+            </div>
+            <div>
+                <p>Meeting View</p>
+            </div>
+        </div>
+        <!-- <div class="footer">
+            <div><p>©2021 Invertis University, Invertis Village,Bareilly-Lucknow National Highway, NH-24, Bareilly-243123, Uttar Pradesh</p></div>
+        </div> -->
+        <div id="admission" class="content">
+            <h3>Admission Details</h3>
+            <div class="boxinside">
+                <div class="form">
+                    <label>Student ID</label>
+                    <span>BC2024174</span>
+                </div>
+                <div class="form">
+                    <label>Enrollment Number</label>
+                    <span>241350</span>
+                </div>
+                <div class="form">
+                    <label>Roll Number</label>
+                    <span>2410201628</span>
+                </div>
+                <div class="form">
+                    <label>Application Number</label>
+                    <span>APP/24-25/02865</span>
+                </div>
+                <div class="form">
+                    <label>Name (As Per 10th Marksheet)</label>
+                    <span>SAFIULLAH SHEKH</span>
+                </div>
+                <div class="form">
+                    <label>Academic Year</label>
+                    <span>25-26</span>
+                </div>
+                <div class="form">
+                    <label>Program/Branch</label>
+                    <span>BACHERLOR OF COMPUTER APPLICATION</span>
+                </div>
+                <div class="form">
+                    <label>Admitted Year</label>
+                    <span>24-25</span>
+                </div>
+                <div class="form">
+                    <label>DOB-DD/MM/YYYY:</label>
+                    <span>25-26</span>
+                </div>
+                <div class="form">
+                    <label>Gender :</label>
+                    <span>Male</span>
+                </div>
+                <div class="form">
+                    <label>Mobile No.</label>
+                    <span>7081457139</span>
+                </div>
+                <div class="form">
+                    <label>DOJ - Class Start Date</label>
+                    <span>07 June 2024</span>
+                </div>
+                <div class="form">
+                    <label>Email ID</label>
+                    <span>sheikhrafiullah57@gmail.com</span>
+                </div>
+                <div class="form">
+                    <label>Blood Group</label>
+                    <span>A+</span>
+                </div>
+                <div class="form">
+                    <label>Category</label>
+                    <span>General</span>
+                </div>
+                <div class="form">
+                    <label>Religion</label>
+                    <span>Muslim</span>
+                </div>
+                <div class="form">
+                    <label>Social Category</label>
+                    <span></span>
+                </div>
+                <div class="form">
+                    <label>Mother Tongue</label>
+                    <span>Bhojpuri</span>
+                </div>
+                <div class="form">
+                    <label>Marital Status</label>
+                    <span>Unmarried</span>
+                </div>
+                <div class="form">
+                    <label>Domicile State</label>
+                    <span>UP</span>
+                </div>
+                <div class="form">
+                    <label>Aadhar Card Number</label>
+                    <span>8674 5247 9674</span>
+                </div>
+                <div class="form">
+                    <label>Bath</label>
+                    <span>2024</span>
+                </div>
+            </div>
+        </div>
+        <div id="academic2" class="content">
+            <h3>Course Registration</h3>
+            <div class="boxinside">
+                <div class="form">
+                    <label>Program Code</label>
+                    <span>BCA-001</span>
+                </div>
+                <div class="form" id="form_P">
+                    <label>Program Name</label>
+                    <span style="font-size: 11px;">BACHERLOR OF COMPUTER APPLICATION</span>
+                </div>
+                <div class="form">
+                    <label>Semester Year</label>
+                    <span>III</span>
+                </div>
+                <div class="form">
+                    <label>Section</label>
+                    <span>I</span>
+                </div>
+                <div class="form">
+                    <label>Total Credit</label>
+                    <span>22</span>
+                </div>
+                <div class="form">
+                    <label>Course Credit</label>
+                    <span>22.00 Out of 22.00</span>
+                </div>
+            </div>
+            <div class="core">
+                <div class="core1">
+                    <span>Core Course</span>
+                    <span class="icon" id="core_icon"><b>+</b></span>
+                </div>
+            </div>
+            <div class="course_detail">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Credit</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>BCA303</td>
+                        <td>DATA COMMUNICATION AND COMPUTER NETWORKS</td>
+                        <td>6.00</td>
+                    </tr>
+                    <tr>
+                        <td>BCA304</td>
+                        <td>MANAGEMENT INFORMATION SYSTEM</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>BCA351</td>
+                        <td>DATABASE MANAGEMENT SYSTEMS LAB</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>BCA352</td>
+                        <td>DATA STRUCTURES LAB</td>
+                        <td>2.00</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td style="text-align: right;"><b>Total</b></td>
+                            <td><b>20.00</b></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="elective">
+                <div class="elective1">
+                    <span>Elective Course</span>
+                    <span class="icon" id="elective_icon"><b>+</b></span>
+                </div>
+            </div>
+            <div class="elective_detail" style="max-height: 300px;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Credit</th>
+                            <th>Select</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BCA301</td>
+                            <td>NUMERICAL AND STATISTICAL TECHNIQUES</td>
+                            <td>4.00</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="fees">
+            <h3>Fees Details</h3>
+            <div class="fees_flex">
+                <div class="total_fee">
+                    <div class="head">
+                        <h3>Total Fee</h3>
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Academic Year</th>
+                                    <th>Due Date</th>
+                                    <th>Description</th>
+                                    <th>Semester Year</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="total_fee">
+                    <div class="head">
+                        <h3>Total Fee</h3>
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Academic Year</th>
+                                    <th>Due Date</th>
+                                    <th>Description</th>
+                                    <th>Semester Year</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="fees_flex">
+                <div class="total_fee">
+                    <div class="head">
+                        <h3>Total Fee</h3>
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Academic Year</th>
+                                    <th>Due Date</th>
+                                    <th>Description</th>
+                                    <th>Semester Year</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>24-24</td>
+                                    <td>07-Jun-2024</td>
+                                    <td>Institute Fee</td>
+                                    <td>I</td>
+                                    <td>50,000.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="total_fee">
+                    <div class="head">
+                        <h3>Total Fee</h3>
+                    </div>
+                    <div>
+                        <table>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_fees">
+                <div class="footer_inside">
+                    <p><b class="blink_note">Note:</b>Course fee payment cannot be combined with other fee payments. Transaction fee charges to
+                        be
+                        borne by cardholder for any payment
+                        Transaction fee charges will not be refunded/ reversed under any circumstances for any refund/
+                        reversal /chargeback and any other reasons.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="invertis1.js"></script>
+</body>
+
+</html>
