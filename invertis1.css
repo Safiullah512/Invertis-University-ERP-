@@ -82,7 +82,7 @@
     color: white;
     border-top-right-radius: 20px;
     border-left: 3px solid red;
-
+    cursor: pointer;
 }
 
 .box:hover {
@@ -108,14 +108,14 @@ hr {
 
 .myhome h3 {
     text-align: center;
-    margin-top: 130px;
+    margin-top: 120px;
     background-color: rgb(79, 79, 183);
     border-radius: 20px;
     font-size: 13px;
     width: fit-content;
     height: auto;
-    object-fit: cover;
-    padding: 5px;
+    object-fit: cover;  
+    padding: 5px 10px;
     color: white;
     margin-left: 1130px;
 }
@@ -135,7 +135,7 @@ hr {
 
 .backgroundimg img {
     width: 100%;
-    height: auto;
+    height: fit-content;
     object-fit: cover;
 }
 
@@ -145,10 +145,11 @@ hr {
     height: auto;
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
-    top: 165px;
+    top: 158px;
     text-align: center;
     border-left: 2px solid red;
-}
+    display: none;
+} 
 .leftcol_active{
     display: none;
 }
@@ -201,6 +202,20 @@ hr {
     color: white;
     font-size: 15px;
     cursor: pointer;
+}
+.home_footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    top: 775px;
+    text-align: center;
+    height: fit-content;
+    background: #524D4D;
+}  
+.home_footer p{
+    color: white;
+    padding: 10px;
+    font-size: 14px;
 }
 
 #admission {
@@ -510,7 +525,17 @@ tfoot {
     margin: 0px 10px;
     height: fit-content;
     border: 2px solid red;
+    display: none;
+    cursor: pointer;
 }
+.fees_active{
+    display: block;
+}
+
+#fees1{
+    cursor: pointer;
+}
+
 .fees h3 {
     background-color: darkblue;
     color: white;
@@ -551,7 +576,7 @@ tfoot {
     margin: 10px;
 }
 .total_fee h3{
-    background: #08628d;
+    background: #08628c;
     text-align: center;
     font-size: 16px;
     margin-bottom: 10px;
@@ -582,7 +607,7 @@ tfoot {
     margin-right: 20px;
 }
 .footer_inside{
-    box-shadow: inset 0 -5px 8px black;
+    box-shadow: inset 0 0px 30px  #08628c;
     width: 100%;
     height: fit-content;
     background-color: white;
@@ -614,3 +639,111 @@ tfoot {
     
 }
 
+.application_leftcol {
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 155px;
+    text-align: center;
+    border-left: 2px solid red;
+}
+.application_leftcol_active{
+    display: none;
+}
+
+.application_leftcol p {
+    border-bottom: 1px solid black;
+    margin-top: 1px solid black;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+}
+
+.application_lefthome p {
+    background: linear-gradient(to right, #cf4d33 0%, #cf4d33 100%);
+    border: 1px solid white;
+    color: white;
+    background: linear-gradient(270deg, red, blue);
+    background-size: 400% 400%;
+    /* Yeh zaroori hai */
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.application_hidden {
+    display: none;
+}
+
+.application_leftcol p:hover {
+    background: linear-gradient(to right, #cf4d33 0%, #cf4d33 100%);
+    color: white;
+}
+.application_certificate{
+    border: 2px solid red;
+    width: 80%;
+    background-color: rgb(242, 242, 242,0.8);
+    height: 200px;
+    position: absolute;
+    right: 10px;
+    top: 155px;
+}
+.application_certificate  h3 {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    background: linear-gradient(to right, #cf4d33 0%, #cf4d33 100%);
+    border: 1px solid white;
+    color: white;
+    background: linear-gradient(270deg, red, blue);
+    background-size: 400% 400%;
+    /* Yeh zaroori hai */
+    animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.application_certificate .certificate_box{
+    width: 96%;
+    margin: 20px;
+    background-color: rgb(255, 255, 255,0.6);
+    box-shadow: 0 0 12px black;
+    height: 100px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.application_select select{
+    padding: 5px;
+}
+.application_select1 select{
+    width: 200px;
+    padding: 5px;
+}

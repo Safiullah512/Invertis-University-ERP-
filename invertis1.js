@@ -8,22 +8,22 @@ btn.addEventListener("click", function () {
     admissionBox.classList.toggle("active");
     admissionBox.style.display = "block";
     academicbox.style.display = "none";
-    fees.style.display = "none";
+    fees.classList.remove("fees_active");
     application.style.display = "none";
     left.classList.remove();
 });
 
-const academic = document.getElementById("academic2");
+// const academic = document.getElementById("academic2");
 
-function toggleAcademic(){
-  if(academic.classList.contains("active")){
-    academic.style.maxHeight = null;
-    academic.classList.remove("active");
-  }else{
-    academic.classList.add("active");
-    academic.style.maxHeight = academic.scrollHeight + "px";
-  }
-}
+// function toggleAcademic(){
+//   if(academic.classList.contains("active")){
+//     academic.style.maxHeight = null;
+//     academic.classList.remove("active");
+//   }else{
+//     academic.classList.add("active");
+//     academic.style.maxHeight = academic.scrollHeight + "px";
+//   }
+// }
 
 let btn1 = document.getElementById("academic1");
 let academicbox = document.getElementById("academic2");
@@ -31,9 +31,9 @@ btn1.addEventListener("click", function () {
     academicbox.classList.toggle("active");
     academicbox.style.display = "block";
     admissionBox.style.display = "none";
-    left.classList.toggle("leftcol_active");
+    left.classList.remove("leftcol_active");
+    fees.classList.remove("fees_active");
 
-    fees.style.display = "none";
     application.style.display = "none";
     if (academicbox.classList.contains("active")) {
         btn1.textContent = "Academic";
@@ -71,15 +71,16 @@ elective_icon.addEventListener("click",function(){
     }
 })
 
-let feesBtn = document.getElementById("fees1");
-let fees = document.getElementById("fees");
-feesBtn.addEventListener("click", function () {
-    fees.classList.toggle("active");
-    fees.style.display = "block";
+let fees=document.querySelector(".fees");
+let fees1= document.querySelector("#fees1");
+fees1.addEventListener("click", function () {
+    fees.classList.toggle("fees_active");
     admissionBox.style.display = "none";
     academicbox.style.display = "none";
     application.style.display = "none";
 });
+
+
 let applicationBtn = document.getElementById("application1");
 let application = document.getElementById("application");
 applicationBtn.addEventListener("click", () => {
@@ -95,4 +96,6 @@ const invertisImg=document.querySelector(".invertisImg");
 invertisImg.addEventListener("click",function(){
     window.open("https://www.invertisuniversity.ac.in/","_blank","noopener");
 });
+
+
 
